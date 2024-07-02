@@ -1,0 +1,15 @@
+/* app/static/css/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 20px;
+}
+
