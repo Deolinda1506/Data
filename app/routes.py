@@ -1,15 +1,16 @@
-from flask import render_template, Blueprint
+from flask import Blueprint, render_template
 
-routes = Blueprint('routes', __name__)
+bp = Blueprint('routes', __name__)
 
-@routes.route('/')
+@bp.route('/')
 def home():
     return render_template('home.html')
 
-@routes.route('/login')
+@bp.route('/login')
 def login():
     return render_template('login.html')
 
-@routes.route('/register')
+@bp.route('/register')
 def register():
     return render_template('register.html')
+
